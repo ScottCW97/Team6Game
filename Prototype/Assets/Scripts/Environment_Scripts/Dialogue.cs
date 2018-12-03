@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(Type());
     }
 
+
     private void Update()
     {
         if(textDisplay.text == sentences[index])
@@ -29,10 +30,12 @@ public class Dialogue : MonoBehaviour
     }
 
 
+
+
     IEnumerator Type()
     {
 
-        foreach(char letter in sentences[index].ToCharArray())
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             SoundManager.PlaySound("TextScrollingSound");
@@ -41,6 +44,9 @@ public class Dialogue : MonoBehaviour
 
         }
     }
+
+
+
 
 
     public void NextSentence()

@@ -245,7 +245,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4642267832204012, guid: 03b96884b3d944928abf0633bc98da23, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114106258270486038, guid: 03b96884b3d944928abf0633bc98da23,
         type: 2}
@@ -260,6 +260,30 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03b96884b3d944928abf0633bc98da23, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &634256024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520758749221778, guid: 764e88eb333e842adac9601dae71ec3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1981901783}
+--- !u!114 &634256025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634256024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7231ac8bba7431d9e8e5a61bcc4e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1418486075}
+  sentences:
+  - 'SUPER: Horashio I''ve been looking for you what happened?'
+  - 'HORASHIO: Super, I didn''t get kidnapped...I left on purpose...'
+  - 'SUPER: Horashio what! It was you all along!?'
+  - 'HORASHIO: Guards...dispose of him...'
+  typingSpeed: 0.04
+  continueButton: {fileID: 2044096311}
 --- !u!1001 &727202502
 Prefab:
   m_ObjectHideFlags: 0
@@ -360,15 +384,62 @@ Prefab:
     - target: {fileID: 114435995955261300, guid: 379ef0683fcc24d368ce4de2578b3401,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114435995955261300, guid: 379ef0683fcc24d368ce4de2578b3401,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 379ef0683fcc24d368ce4de2578b3401, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &732217591
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 82056881898095090, guid: 0df0b27c390594338a3bb908ddce432f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &749664883 stripped
 MonoBehaviour:
@@ -747,52 +818,86 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86846ed4653334763aea18f6b1336c88, type: 2}
   m_IsPrefabAsset: 0
---- !u!1001 &1878245901
+--- !u!1001 &1981901783
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.0771602
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.3891103
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.8046875
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4263465609835742, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 82056881898095090, guid: 0df0b27c390594338a3bb908ddce432f,
+    - target: {fileID: 1520758749221778, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
+      propertyPath: m_Name
+      value: DialogueManager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
         type: 2}
-      propertyPath: m_Volume
-      value: 0.8
+      propertyPath: continueButton
+      value: 
+      objectReference: {fileID: 2044096311}
+    - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
+        type: 2}
+      propertyPath: textDisplay
+      value: 
+      objectReference: {fileID: 1418486075}
+    - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
+        type: 2}
+      propertyPath: sentences.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0df0b27c390594338a3bb908ddce432f, type: 2}
+    - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
+        type: 2}
+      propertyPath: sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
+        type: 2}
+      propertyPath: sentences.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
+        type: 2}
+      propertyPath: sentences.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520758749221778, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &2001339526
 Prefab:
@@ -804,7 +909,7 @@ Prefab:
     - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
         type: 2}
       propertyPath: sentences.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4214935216180376, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -866,12 +971,16 @@ Prefab:
     - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
         type: 2}
       propertyPath: sentences.Array.data[3]
-      value: 'HORASHIO: Guards...dispose of him...'
+      value: 'SUPER: How could my pet rock betray me?'
       objectReference: {fileID: 0}
     - target: {fileID: 114608227648265228, guid: 764e88eb333e842adac9601dae71ec3a,
         type: 2}
       propertyPath: sentences.Array.data[0]
       value: 'SUPER: Horashio I''ve been looking for you what happened?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520758749221778, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764e88eb333e842adac9601dae71ec3a, type: 2}
